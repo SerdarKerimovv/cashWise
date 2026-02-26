@@ -15,4 +15,7 @@ public class CommonPage {
 
     @FindBy(xpath = "//li[text()='Expenses']")
     public WebElement expenses;
+
+    @FindBy(xpath = "//li[text()='Sales']")
+    public WebElement sales;
 }
