@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c56f6729-e35c-4057-bc0c-9ff3e3cb576e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/DeleteProfilePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/UpdateProfilePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/DeleteProfileTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/UpdateProfileTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/CommonPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/SellersPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/SellersTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,14 +58,16 @@
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.DeleteProfileTests.deleteProfile.executor": "Run",
     "TestNG.DeleteProfileTests.executor": "Run",
     "TestNG.LoginTests.executor": "Run",
     "TestNG.LoginTests.loginTest.executor": "Debug",
+    "TestNG.SellersTests.executor": "Run",
     "TestNG.SignupTests.executor": "Run",
     "TestNG.SignupTests.signupTest.executor": "Run",
     "TestNG.UpdateProfileTests.executor": "Run",
     "TestNG.UpdateProfileTests.updateProfile.executor": "Run",
-    "git-widget-placeholder": "updateProfile",
+    "git-widget-placeholder": "updateExpenses",
     "kotlin-language-version-configured": "true",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
@@ -77,7 +78,7 @@
       <recent name="$PROJECT_DIR$/src/test/java" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.UpdateProfileTests">
+  <component name="RunManager" selected="TestNG.SellersTests">
     <configuration name="DeleteProfileTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="cashWise" />
       <extension name="coverage">
@@ -107,6 +108,23 @@
       <option name="MAIN_CLASS_NAME" value="tests.DeleteProfileTests" />
       <option name="METHOD_NAME" value="deleteProfile" />
       <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SellersTests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="cashWise" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.SellersTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -147,31 +165,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UpdateProfileTests.updateProfile" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="cashWise" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.UpdateProfileTests" />
-      <option name="METHOD_NAME" value="updateProfile" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.SellersTests" />
         <item itemvalue="TestNG.UpdateProfileTests" />
         <item itemvalue="TestNG.SignupTests" />
         <item itemvalue="TestNG.DeleteProfileTests" />
         <item itemvalue="TestNG.DeleteProfileTests.deleteProfile" />
-        <item itemvalue="TestNG.UpdateProfileTests.updateProfile" />
       </list>
     </recent_temporary>
   </component>
@@ -190,12 +190,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1772087681242</updated>
-      <workItem from="1772087682369" duration="8729000" />
+      <workItem from="1772087682369" duration="11894000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
