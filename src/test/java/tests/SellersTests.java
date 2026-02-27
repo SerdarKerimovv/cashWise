@@ -23,7 +23,7 @@ public class SellersTests extends BaseUI {
 
         sellersPage.addSeller();
 
-        waitForUrlContains("dashboard");
-        Assertions.assertTrue(driver.getCurrentUrl().contains("dashboard"));
+        waitForUrlContains("sellers");
+        Assertions.assertTrue(driver.getCurrentUrl().contains("sellers"));
     }
 }

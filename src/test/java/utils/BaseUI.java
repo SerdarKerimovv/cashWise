@@ -113,7 +113,7 @@ public class BaseUI {
 
     /**
      * Wait for the url contains for given text
-     * @param text       The text to check if url cotians or not
+     * @param text       The text to check if url contains or not
      */
     public static void waitForUrlContains(String text) {
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
