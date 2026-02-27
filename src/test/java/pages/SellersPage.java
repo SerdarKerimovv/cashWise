@@ -1,11 +1,14 @@
 package pages;
 
 import com.github.javafaker.Faker;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import utils.Driver;
+
+import java.time.Duration;
 
 public class SellersPage {
     WebDriver driver = Driver.getDriver();
@@ -36,6 +39,14 @@ public class SellersPage {
     @FindBy(xpath = "//button[text()='Save']")
     public WebElement sellerSaveButton;
 
+    @FindBy(xpath = "//td[last()]//button[1]")
+    public WebElement firstEditSellerButton;
+
+    @FindBy(xpath = "//h3[text()='Edit']/following::input[@id='company_name_input_text'][1]")
+    public WebElement titleInputEdit;
+
+    @FindBy(xpath = "//div[text()='Seller successfully edited']")
+    public WebElement successfullyEditedMessage;
 
     public void addSeller() {
         addSellerButton.click();
@@ -48,5 +59,24 @@ public class SellersPage {
 
         sellerSaveButton.click();
 
+    }
+
+    public void clearAndType(WebElement element, String text) {
+        element.click();
+        element.sendKeys(Keys.chord(Keys.CONTROL, "a"));
+        element.sendKeys(Keys.DELETE);
+        element.sendKeys(text);
+    }
+
+    public void editSellerInfo() {
+        firstEditSellerButton.click();
+
+        clearAndType(titleInput, faker.name().title());
+        clearAndType(sellerFullNameInput, faker.name().fullName());
+        clearAndType(sellerEmailInput, faker.internet().emailAddress());
+        clearAndType(sellerPhoneInput, faker.phoneNumber().phoneNumber());
+        clearAndType(sellerAddressInput, faker.address().streetAddress());
+
+        sellerSaveButton.click();
     }
 }

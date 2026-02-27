@@ -26,4 +26,15 @@ public class SellersTests extends BaseUI {
         waitForUrlContains("dashboard");
         Assertions.assertTrue(driver.getCurrentUrl().contains("dashboard"));
     }
+
+    @Test
+    public void editSellerInfoTest() {
+        loginPage.login(ConfigurationReader.getProperty("username"), ConfigurationReader.getProperty("password"));
+        commonPage.expenses.click();
+
+        sellersPage.editSellerInfo();
+
+        waitUntilVisible(10, sellersPage.successfullyEditedMessage);
+        Assertions.assertTrue(sellersPage.successfullyEditedMessage.isDisplayed());
+    }
 }
